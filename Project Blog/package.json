@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Benson15912.github.io/project-blog",
+  "homepage": "https://Benson15912.github.io/Project-Blog",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
