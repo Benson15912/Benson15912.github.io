@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 
 // Path to your PDF resume in `public/` folder
-const RESUME_PDF_URL = `${import.meta.env.BASE_URL}/BensonAng_Resume.pdf`
+const RESUME_PDF_URL = "/resume.pdf"
 
 export const Route = createFileRoute('/resume/')({
   component: RouteComponent,

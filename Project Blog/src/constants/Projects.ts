@@ -2,7 +2,7 @@ export const Projects = [
     {
         projectName: "Recycling is Fun!",
         date: "01-06-2022",
-        image: `${import.meta.env.BASE_URL}/project_pictures/recycling-is-fun.jpg`,
+        image: "/project_pictures/recycling-is-fun.jpg",
         role: "Game Developer",
         description: "A fun and educational game that teaches players about the recycling process and its importance.",
         link: "/projects/recycling-is-fun",
@@ -11,7 +11,7 @@ export const Projects = [
         {
         projectName: "bingeworthy",
         date: "01-08-2023",
-        image: `${import.meta.env.BASE_URL}/project_pictures/bingeworthy.JPG`,
+        image: "/project_pictures/bingeworthy.JPG",
         role: "Web Developer",
         description: "A web application that allows users to track their favorite TV shows and receive recommendations based on their viewing history.",
         link: "/projects/bingeworthy",
@@ -20,7 +20,7 @@ export const Projects = [
         {
         projectName: "BrainHack 2024",
         date: "01-06-2024",
-        image: `${import.meta.env.BASE_URL}/project_pictures/brainhack.png`,
+        image: "/project_pictures/brainhack.png",
         role: "AI/ML Engineer",
         description: "An AI/ML hackathon that focuses on Object Detection, Question Answering and Automatic Speech Recognition.",
         link: "/projects/brainhack-2024",
@@ -29,7 +29,7 @@ export const Projects = [
         {
         projectName: "Captcha Recognition",
         date: "01-10-2024",
-        image: `${import.meta.env.BASE_URL}/project_pictures/captcha-recognition.png`,
+        image: "/project_pictures/captcha-recognition.png",
         role: "AI/ML Engineer",
         description: "A project focused on recognizing and solving CAPTCHAs using advanced machine learning techniques.",
         link: "/projects/captcha-recognition",
@@ -38,7 +38,7 @@ export const Projects = [
         {
         projectName: "Sarcasm Detection in Singaporean News",
         date: "01-04-2025",
-        image: `${import.meta.env.BASE_URL}/project_pictures/sarcasm_detection.jpg`,
+        image: "/project_pictures/sarcasm_detection.jpg",
         role: "AI/ML Engineer",
         description: "A project focused on detecting sarcasm in news articles from Singapore.",
         link: "/projects/sarcasm-detection",
@@ -47,7 +47,7 @@ export const Projects = [
         {
         projectName: "Discord Clone",
         date: "01-09-2024",
-        image: `${import.meta.env.BASE_URL}/project_pictures/discord.png`,
+        image: "/project_pictures/discord.png",
         role: "App Developer",
         description: "A clone of the popular Discord application, focusing on voice chat functionality.",
         link: "/projects/discord-clone",

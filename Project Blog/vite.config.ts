@@ -11,5 +11,5 @@ export default defineConfig({
     }),
     react(),
     tailwindcss()],
-  base: '/Project-Blog/'
+  base: '/'
 })
