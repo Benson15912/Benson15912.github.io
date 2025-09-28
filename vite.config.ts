@@ -7,13 +7,9 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [tanstackRouter({
       target: 'react',
-      autoCodeSplitting: true,
+      autoCodeSplitting: false,
     }),
     react(),
     tailwindcss()],
   base: '/',
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets'
-  }
 })
