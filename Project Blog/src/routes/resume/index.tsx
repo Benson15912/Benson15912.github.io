@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 
 // Path to your PDF resume in `public/` folder
-const RESUME_PDF_URL = "/BensonAng_Resume.pdf"
+const RESUME_PDF_URL = "/resume.pdf"
 
 export const Route = createFileRoute('/resume/')({
   component: RouteComponent,
@@ -55,7 +55,7 @@ function RouteComponent() {
         <section className="mt-10">
             <a
             href={RESUME_PDF_URL}
-            download="BensonAng_Resume.pdf"
+            download="resume.pdf"
             className="inline-flex items-center px-6 py-3 bg-gray-900 dark:bg-gray-700 text-white font-medium rounded-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors duration-200"
           >
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
