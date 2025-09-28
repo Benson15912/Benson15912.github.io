@@ -20,7 +20,7 @@ function RouteComponent() {
   }
 
   return (
-    <div className="min-h-screen mt-20">
+    <div className="min-h-screen mt-15">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">

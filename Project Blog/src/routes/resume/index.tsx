@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 
 // Path to your PDF resume in `public/` folder
-const RESUME_PDF_URL = "/resume.pdf"
+const RESUME_PDF_URL = "/BensonAng_Resume.pdf"
 
 export const Route = createFileRoute('/resume/')({
   component: RouteComponent,
@@ -9,7 +9,7 @@ export const Route = createFileRoute('/resume/')({
 
 function RouteComponent() {
   return (
-    <div className="min-h-screen py-12">
+    <div className="min-h-screen mt-15">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           
@@ -48,6 +48,26 @@ function RouteComponent() {
             <div>
               <h3 className="font-medium text-gray-900 dark:text-gray-100 mb-2">Tools</h3>
               <p className="text-gray-700 dark:text-gray-300">Git | SVN | Jira | Docker | PostgreSQL | OracleDB | Hugging Face | Postman</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Personal Information Section */}
+        <section className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6 mt-6">
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">Personal Information</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h3 className="font-medium text-gray-900 dark:text-gray-100 mb-2">Nationality</h3>
+              <p className="text-gray-700 dark:text-gray-300">Singaporean Citizen</p>
+            </div>
+            <div>
+              <h3 className="font-medium text-gray-900 dark:text-gray-100 mb-2">Work Authorization</h3>
+              <p className="text-gray-700 dark:text-gray-300">No work permit required</p>
+            </div>
+            <div className="md:col-span-2">
+              <p className="text-sm text-green-600 dark:text-green-400 font-medium">
+                Eligible to work in Singapore without sponsorship
+              </p>
             </div>
           </div>
         </section>

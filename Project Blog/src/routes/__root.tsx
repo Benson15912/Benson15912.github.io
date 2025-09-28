@@ -8,7 +8,7 @@ const RootLayout = () => (
     <Sidebar/>
 
     {/* Main content scrolls independently */}
-    <div className="flex-1 overflow-auto p-4 text-center">
+    <div className="flex-1 overflow-auto p-4 text-center mt-10">
       <div className="max-w-4xl mx-auto">
         <Outlet />
       </div>
