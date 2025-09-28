@@ -93,11 +93,12 @@ function RouteComponent() {
         {/* Call to Action */}
         <div className="text-center bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-8">
           <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-            Let's Work Together
+            Talk to me about your project!
           </h2>
           <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-md mx-auto">
-            Whether you have a project in mind or just want to say hello, 
-            I'd love to hear from you.
+            I am always open to impactful and interesting projects!
+            
+            You can also drop me a message if you want to have a game of Dota2 haha.
           </p>
         </div>
       </div>

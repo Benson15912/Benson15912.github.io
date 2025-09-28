@@ -6,7 +6,7 @@ export const Route = createFileRoute('/about')({
 })
 
 function RouteComponent() {
-   const displayText = useTypingText("Software Engineer & AI/ML Specialist");
+   const displayText = useTypingText(["Software Engineer & AI/ML Specialist"]);
    return (
     <div className="text-center mt-30">
       <div className="space-y-6">
