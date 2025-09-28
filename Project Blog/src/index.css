@@ -1,2 +1,11 @@
 @import "tailwindcss";
+@import 'github-markdown-css/github-markdown.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-white; /* or any color you prefer */
+  }
+}

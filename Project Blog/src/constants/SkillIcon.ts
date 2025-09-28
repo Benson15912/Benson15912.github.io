@@ -1,0 +1,16 @@
+export const skillIcons: Record<string, string> = {
+  "JavaScript": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+  "TypeScript": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+  "React": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
+  "Node.js": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
+  "Python": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+  "Java": "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+  "Spring": "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg",
+  "SQL": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg",
+  "RabbitMQ": "https://raw.githubusercontent.com/devicons/devicon/master/icons/rabbitmq/rabbitmq-original.svg",
+  "PyTorch": "https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg",
+  "HTML": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+  "CSS": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
+  "HuggingFace": "https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.svg",
+  "Selenium": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Selenium_Logo.png/1148px-Selenium_Logo.png",
+};
