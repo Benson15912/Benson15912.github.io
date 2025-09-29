@@ -1,10 +1,4 @@
-# How I made this
-
-###### *29 September 2025*  
-###### By Benson
-
----
-
+# How this site came to life
 ## The Idea
 Before building this site, I went on a “portfolio safari” — hunting for inspiration from the top portfolio websites out there. And wow… these sites looked **amazing**.
 
