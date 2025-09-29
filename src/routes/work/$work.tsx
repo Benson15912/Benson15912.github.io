@@ -28,7 +28,7 @@ function RouteComponent() {
 
   return (
     <>
-      <div className="mb-6">
+      <div className="mb-6 mt-5">
         <Link
           to="/work"
           className="inline-flex items-center gap-2 px-3 py-1.5 text-sm font-medium 
@@ -51,7 +51,7 @@ function RouteComponent() {
         </Link>
       </div>
 
-      <div className="markdown-body max-w-4xl mx-auto p-6">
+      <div className="markdown-body max-w-4xl mx-auto p-6 text-left">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
       </div>
     </>

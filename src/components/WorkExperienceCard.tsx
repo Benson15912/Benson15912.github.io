@@ -16,7 +16,7 @@ interface WorkExperienceCardProps {
 
 const WorkExperienceCard = ({ experience, isLast }: WorkExperienceCardProps) => {
     return (
-        <div className="relative pl-12">
+        <div>
             {/* Timeline line */}
             {/* {!isLast && (
             <div
