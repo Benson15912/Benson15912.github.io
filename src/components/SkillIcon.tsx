@@ -10,7 +10,7 @@ export const SkillIcon = ({ skill, size = 'md', className = '' }: SkillIconProps
   if (!iconUrl) {
     return (
       <div className={`
-        inline-flex items-center justify-center rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400 font-medium
+        inline-flex items-center justify-center rounded-lg bg-gray-200  text-gray-600  font-medium
         ${size === 'sm' ? 'w-6 h-6 text-xs' : ''}
         ${size === 'md' ? 'w-8 h-8 text-sm' : ''}
         ${size === 'lg' ? 'w-12 h-12 text-base' : ''}

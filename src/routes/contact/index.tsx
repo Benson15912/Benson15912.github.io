@@ -24,10 +24,10 @@ function RouteComponent() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <h1 className="text-4xl font-bold text-gray-900  mb-4">
             Get In Touch
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600  max-w-2xl mx-auto">
             I'm always open to discussing new opportunities, creative projects, 
             or just having a friendly chat about technology.
           </p>
@@ -91,11 +91,11 @@ function RouteComponent() {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-8">
-          <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+        <div className="text-center bg-white  rounded-lg border border-gray-200  p-8">
+          <h2 className="text-2xl font-semibold text-gray-900  mb-4">
             Talk to me about your project!
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-md mx-auto">
+          <p className="text-gray-600  mb-6 max-w-md mx-auto">
             I am always open to impactful and interesting projects!
             
             You can also drop me a message if you want to have a game of Dota2 haha.
@@ -130,31 +130,31 @@ const ContactCard = ({ href, onClick, icon, title, value, description, isCopied 
         onClick,
         type: "button"
       })}
-      className={`block w-full text-left bg-white dark:bg-gray-800 rounded-lg border p-6 transition-all duration-200 group ${
+      className={`block w-full text-left bg-white  rounded-lg border p-6 transition-all duration-200 group ${
         href 
-          ? 'border-gray-200 dark:border-gray-700 hover:shadow-md hover:border-gray-300 dark:hover:border-gray-600' 
-          : 'border-gray-200 dark:border-gray-700 hover:shadow-md hover:border-gray-300 dark:hover:border-gray-600 cursor-pointer'
-      } ${isCopied ? 'border-green-500 dark:border-green-400 bg-green-50 dark:bg-green-900/20' : ''}`}
+          ? 'border-gray-200  hover:shadow-md hover:border-gray-300 :border-gray-600' 
+          : 'border-gray-200  hover:shadow-md hover:border-gray-300 :border-gray-600 cursor-pointer'
+      } ${isCopied ? 'border-green-500  bg-green-50 ' : ''}`}
     >
       <div className="flex items-start space-x-4">
         <div className={`flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center transition-colors duration-200 ${
           isCopied 
-            ? 'bg-green-100 dark:bg-green-800' 
-            : 'bg-stone-100 dark:bg-gray-700 group-hover:bg-stone-200 dark:group-hover:bg-gray-600'
+            ? 'bg-green-100 ' 
+            : 'bg-stone-100  group-hover:bg-stone-200 :bg-gray-600'
         }`}>
-          <div className={isCopied ? 'text-green-600 dark:text-green-400' : 'text-gray-700 dark:text-gray-300'}>
+          <div className={isCopied ? 'text-green-600 ' : 'text-gray-700 '}>
             {icon}
           </div>
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between mb-1">
             <h3 className={`text-lg font-semibold ${
-              isCopied ? 'text-green-700 dark:text-green-300' : 'text-gray-900 dark:text-gray-100'
+              isCopied ? 'text-green-700 ' : 'text-gray-900 '
             }`}>
               {title}
             </h3>
             {isCopied && (
-              <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100">
+              <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800  ">
                 <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
@@ -163,12 +163,12 @@ const ContactCard = ({ href, onClick, icon, title, value, description, isCopied 
             )}
           </div>
           <p className={`font-medium mb-1 truncate ${
-            isCopied ? 'text-green-600 dark:text-green-400' : 'text-gray-700 dark:text-gray-300'
+            isCopied ? 'text-green-600 ' : 'text-gray-700 '
           }`}>
             {value}
           </p>
           <p className={`text-sm ${
-            isCopied ? 'text-green-500 dark:text-green-400' : 'text-gray-500 dark:text-gray-400'
+            isCopied ? 'text-green-500 ' : 'text-gray-500 '
           }`}>
             {description}
           </p>

@@ -25,20 +25,20 @@ function Index() {
           <div className="space-y-8">
             {/* Hero Section */}
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light text-gray-900 dark:text-gray-100 tracking-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light text-gray-900  tracking-tight">
                 Hi, I'm <span className="font-semibold">Benson</span>
               </h1>
 
               {/* Animated Title */}
               <div className="h-12 sm:h-16 flex items-center justify-center">
-                <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-400 font-mono">
+                <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-600  font-mono">
                   {displayText}
                   <span className="animate-pulse">|</span>
                 </h2>
               </div>
 
               {/* Short Description */}
-              <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-lg text-gray-500  max-w-2xl mx-auto leading-relaxed">
                 I build intelligent systems and scalable applications that solve
                 real-world problems. Passionate about machine learning, clean
                 code, and innovative solutions.
@@ -47,7 +47,7 @@ function Index() {
 
             {/* Navigation Section */}
             <div className="pt-12">
-              <div className="text-xl text-gray-700 dark:text-gray-300 mb-8 font-medium">
+              <div className="text-xl text-gray-700  mb-8 font-medium">
                 Learn more about me!
               </div>
               
@@ -57,12 +57,12 @@ function Index() {
                   <Link
                     key={index}
                     to={button.path}
-                    className="group p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 hover:shadow-md transition-all duration-200 text-left"
+                    className="group p-4 bg-white  rounded-lg border border-gray-200  hover:border-gray-300 :border-gray-600 hover:shadow-md transition-all duration-200 text-left"
                   >
-                    <div className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    <div className="font-semibold text-gray-900  group-hover:text-blue-600 :text-blue-400 transition-colors">
                       {button.label}
                     </div>
-                    <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                    <div className="text-sm text-gray-500  mt-1">
                       {button.description}
                     </div>
                   </Link>

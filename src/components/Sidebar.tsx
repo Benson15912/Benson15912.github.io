@@ -20,9 +20,9 @@ export const Sidebar = () => {
   const closeSidebar = () => setIsOpen(false)
 
   return (
-    <div className="h-full border-r border-gray-200 dark:border-gray-700 bg-stone-100">
+    <div className="h-full border-r border-gray-200  bg-stone-100">
       {/* Mobile menu button */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 z-1 bg-stone-100 px-4 py-3 flex items-center border-b border-gray-200 dark:border-gray-700">
+      <div className="lg:hidden fixed top-0 left-0 right-0 z-1 bg-stone-100 px-4 py-3 flex items-center border-b border-gray-200 ">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="p-2 rounded-md hover:bg-gray-200 transition-colors mr-4"
@@ -51,14 +51,14 @@ export const Sidebar = () => {
       <div
         className={`
           fixed lg:static inset-y-0 left-0 z-40
-          w-64 border-r border-gray-200 dark:border-gray-700 bg-stone-100
+          w-64 border-r border-gray-200  bg-stone-100
           transform transition-transform duration-300 ease-in-out
           ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
         `}
       >
         <div className="flex flex-col h-full">
           {/* Logo/Brand */}
-          <div className="p-4 border-b border-gray-200 dark:border-gray-700">
+          <div className="p-4 border-b border-gray-200 ">
             <ProfileIcon />
           </div>
 
@@ -75,8 +75,8 @@ export const Sidebar = () => {
                       className={`
                         block px-4 py-3 rounded-lg transition-colors duration-200
                         ${isActive
-                          ? 'bg-gray-300 dark:bg-blue-900 font-medium'
-                          : 'text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
+                          ? 'bg-gray-300  font-medium'
+                          : 'text-gray-700  hover:bg-gray-200 :bg-gray-700'
                         }
                       `}
                       activeOptions={{ exact: item.to === '/' }}
@@ -90,8 +90,8 @@ export const Sidebar = () => {
           </nav>
 
           {/* Footer */}
-          <div className="p-4 border-t border-gray-200 dark:border-gray-700">
-            <div className="text-sm text-gray-500 dark:text-gray-400">
+          <div className="p-4 border-t border-gray-200 ">
+            <div className="text-sm text-gray-500 ">
               {/* Footer text or links here */}
             </div>
           </div>

@@ -14,7 +14,7 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ projectName, date, image, role, description, link, skills, category }: ProjectCardProps) => {
     return (
-        <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6 hover:shadow-sm transition-all duration-200 text-left">
+        <div className="bg-white  rounded-lg border border-gray-200  p-6 hover:shadow-sm transition-all duration-200 text-left hover:shadow-lg hover:-translate-y-1 transition duration-300">
             <div className="w-full h-48 rounded-md mb-4 overflow-hidden">
             {image ? (
                 <img
@@ -32,11 +32,11 @@ export const ProjectCard = ({ projectName, date, image, role, description, link,
             {/* Header Row */}
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4 gap-2">
                 <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">
+                    <h3 className="text-xl font-semibold text-gray-900  mb-1">
                         {projectName}
                     </h3>
                     {category && (
-                        <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
+                        <p className="text-sm font-medium text-blue-600 ">
                             {category}
                         </p>
                     )}
@@ -44,7 +44,7 @@ export const ProjectCard = ({ projectName, date, image, role, description, link,
             </div>
 
             {/* Description */}
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+            <p className="text-gray-700  leading-relaxed mb-4">
                 {description}
             </p>
 
@@ -54,7 +54,7 @@ export const ProjectCard = ({ projectName, date, image, role, description, link,
                     {skills.map((skill) => (
                         <span 
                             key={skill} 
-                            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-full"
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-gray-700  bg-gray-100  border border-gray-300  rounded-full"
                         >
                             <SkillIcon skill={skill} size="sm" />
                             {skill}
@@ -67,10 +67,10 @@ export const ProjectCard = ({ projectName, date, image, role, description, link,
                     <Link
                         to={link}
                         className="inline-flex items-center gap-1 px-3 py-1.5 text-sm font-medium 
-                                   text-blue-600 dark:text-blue-400 border border-blue-200 
-                                   dark:border-blue-700 rounded-lg 
-                                   hover:bg-blue-50 dark:hover:bg-blue-900/30 
-                                   hover:border-blue-300 dark:hover:border-blue-600 
+                                   text-blue-600  border border-blue-200 
+                                    rounded-lg 
+                                   hover:bg-blue-50 :bg-blue-900/30 
+                                   hover:border-blue-300 :border-blue-600 
                                    transition-colors cursor-pointer whitespace-nowrap"
                     >
                         Learn more →
