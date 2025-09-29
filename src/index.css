@@ -9,3 +9,21 @@
     @apply bg-white; /* or any color you prefer */
   }
 }
+
+/* Force markdown content to always use light theme */
+.markdown-body {
+  background-color: white !important;
+  color: black !important;
+}
+
+.markdown-body pre,
+.markdown-body code {
+  background-color: #f6f8fa !important;
+  color: #24292e !important;
+}
+
+.dark .markdown-body {
+  /* prevent dark mode overrides */
+  background-color: white !important;
+  color: black !important;
+}
