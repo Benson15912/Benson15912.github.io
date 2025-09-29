@@ -36,7 +36,6 @@ export const Sidebar = () => {
             )}
           </svg>
         </button>
-        <h1 className="text-xl">Menu</h1>
       </div>
 
       {/* Overlay for mobile */}
