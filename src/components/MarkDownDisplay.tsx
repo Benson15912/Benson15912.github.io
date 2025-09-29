@@ -11,13 +11,13 @@ export const MarkdownDisplay = ({ contentPath }: { contentPath: string }) => {
     const [error, setError] = React.useState<string | null>(null);
 
     React.useEffect(() => {
-      fetch(`${contentPath}?t=${Date.now()}`)
-          .then((res) => {
-              if (!res.ok) throw new Error('File not found');
-              return res.text();
-          })
-          .then(setContent)
-          .catch((err) => setError(err.message));
+        fetch(contentPath)
+            .then((res) => {
+                if (!res.ok) throw new Error('File not found');
+                return res.text();
+            })
+            .then(setContent)
+            .catch((err) => setError(err.message));
     }, [contentPath]);
 
     if (error) return <p>Post is yet to be updated</p>;
