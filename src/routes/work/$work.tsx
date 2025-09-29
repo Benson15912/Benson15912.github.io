@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
 
 export const Route = createFileRoute('/work/$work')({
@@ -52,7 +53,16 @@ function RouteComponent() {
       </div>
 
       <div className="markdown-body max-w-4xl mx-auto p-6 text-left">
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+        <ReactMarkdown
+                rehypePlugins={[rehypeRaw]}
+                remarkPlugins={[remarkGfm]}
+                components={{
+                  ol: ({ node, ...props }) => <ol className="list-decimal pl-6 mb-4" {...props} />,
+                  ul: ({ node, ...props }) => <ul className="list-disc pl-6 mb-4" {...props} />,
+                }}
+              >
+                {content}
+              </ReactMarkdown>
       </div>
     </>
     

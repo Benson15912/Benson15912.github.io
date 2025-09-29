@@ -9,21 +9,16 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as AboutRouteRouteImport } from './routes/about/route'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorkIndexRouteImport } from './routes/work/index'
 import { Route as ResumeIndexRouteImport } from './routes/resume/index'
 import { Route as ProjectsIndexRouteImport } from './routes/projects/index'
 import { Route as ContactIndexRouteImport } from './routes/contact/index'
 import { Route as BlogsIndexRouteImport } from './routes/blogs/index'
+import { Route as AboutIndexRouteImport } from './routes/about/index'
 import { Route as WorkWorkRouteImport } from './routes/work/$work'
 import { Route as ProjectsProjectRouteImport } from './routes/projects/$project'
 
-const AboutRouteRoute = AboutRouteRouteImport.update({
-  id: '/about',
-  path: '/about',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -54,6 +49,11 @@ const BlogsIndexRoute = BlogsIndexRouteImport.update({
   path: '/blogs/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutIndexRoute = AboutIndexRouteImport.update({
+  id: '/about/',
+  path: '/about/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WorkWorkRoute = WorkWorkRouteImport.update({
   id: '/work/$work',
   path: '/work/$work',
@@ -67,9 +67,9 @@ const ProjectsProjectRoute = ProjectsProjectRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/about': typeof AboutRouteRoute
   '/projects/$project': typeof ProjectsProjectRoute
   '/work/$work': typeof WorkWorkRoute
+  '/about': typeof AboutIndexRoute
   '/blogs': typeof BlogsIndexRoute
   '/contact': typeof ContactIndexRoute
   '/projects': typeof ProjectsIndexRoute
@@ -78,9 +78,9 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/about': typeof AboutRouteRoute
   '/projects/$project': typeof ProjectsProjectRoute
   '/work/$work': typeof WorkWorkRoute
+  '/about': typeof AboutIndexRoute
   '/blogs': typeof BlogsIndexRoute
   '/contact': typeof ContactIndexRoute
   '/projects': typeof ProjectsIndexRoute
@@ -90,9 +90,9 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/about': typeof AboutRouteRoute
   '/projects/$project': typeof ProjectsProjectRoute
   '/work/$work': typeof WorkWorkRoute
+  '/about/': typeof AboutIndexRoute
   '/blogs/': typeof BlogsIndexRoute
   '/contact/': typeof ContactIndexRoute
   '/projects/': typeof ProjectsIndexRoute
@@ -103,9 +103,9 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
-    | '/about'
     | '/projects/$project'
     | '/work/$work'
+    | '/about'
     | '/blogs'
     | '/contact'
     | '/projects'
@@ -114,9 +114,9 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/about'
     | '/projects/$project'
     | '/work/$work'
+    | '/about'
     | '/blogs'
     | '/contact'
     | '/projects'
@@ -125,9 +125,9 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
-    | '/about'
     | '/projects/$project'
     | '/work/$work'
+    | '/about/'
     | '/blogs/'
     | '/contact/'
     | '/projects/'
@@ -137,9 +137,9 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AboutRouteRoute: typeof AboutRouteRoute
   ProjectsProjectRoute: typeof ProjectsProjectRoute
   WorkWorkRoute: typeof WorkWorkRoute
+  AboutIndexRoute: typeof AboutIndexRoute
   BlogsIndexRoute: typeof BlogsIndexRoute
   ContactIndexRoute: typeof ContactIndexRoute
   ProjectsIndexRoute: typeof ProjectsIndexRoute
@@ -149,13 +149,6 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/about': {
-      id: '/about'
-      path: '/about'
-      fullPath: '/about'
-      preLoaderRoute: typeof AboutRouteRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
@@ -198,6 +191,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about/': {
+      id: '/about/'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/work/$work': {
       id: '/work/$work'
       path: '/work/$work'
@@ -217,9 +217,9 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AboutRouteRoute: AboutRouteRoute,
   ProjectsProjectRoute: ProjectsProjectRoute,
   WorkWorkRoute: WorkWorkRoute,
+  AboutIndexRoute: AboutIndexRoute,
   BlogsIndexRoute: BlogsIndexRoute,
   ContactIndexRoute: ContactIndexRoute,
   ProjectsIndexRoute: ProjectsIndexRoute,

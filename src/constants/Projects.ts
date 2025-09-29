@@ -52,5 +52,14 @@ export const Projects = [
         description: "A clone of the popular Discord application, focusing on voice chat functionality.",
         link: "/projects/discord-clone",
         skills: ["Python", "Web Sockets", "Locks"],
+    },
+    {
+        projectName: "Portfolio Website",
+        date: "29-09-2025",
+        image: "/project_pictures/portfolio/project_banner.png",
+        role: "Web Developer",
+        description: "A personal portfolio website showcasing my projects and skills.",
+        link: "/projects/portfolio",
+        skills: ["React", "Github Pages", "Tailwind"],
     }
 ]

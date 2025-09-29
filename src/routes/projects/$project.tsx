@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { createFileRoute } from '@tanstack/react-router';
+import { createFileRoute, Link } from '@tanstack/react-router';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 
 export const Route = createFileRoute('/projects/$project')({
   component: RouteComponent,
@@ -27,8 +28,41 @@ function RouteComponent() {
   if (!content) return <p>Loading...</p>;
 
   return (
-    <div className="markdown-body max-w-4xl mx-auto p-6">
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+    <>
+    <div className="mb-6 mt-5">
+              <Link
+                to="/projects"
+                className="inline-flex items-center gap-2 px-3 py-1.5 text-sm font-medium 
+                          text-gray-700  bg-gray-100  
+                          rounded-lg hover:bg-gray-200 :bg-gray-700 
+                          transition-colors"
+              >
+                {/* Back arrow icon */}
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+                Back to Projects
+              </Link>
+            </div>
+            <div className="markdown-body max-w-4xl mx-auto p-6 text-left">
+      <ReactMarkdown
+        rehypePlugins={[rehypeRaw]}
+        remarkPlugins={[remarkGfm]}
+        components={{
+          ol: ({ node, ...props }) => <ol className="list-decimal pl-6 mb-4" {...props} />,
+          ul: ({ node, ...props }) => <ul className="list-disc pl-6 mb-4" {...props} />,
+        }}
+      >
+        {content}
+      </ReactMarkdown>
     </div>
+    </>
   );
 }

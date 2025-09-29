@@ -9,7 +9,7 @@ const RootLayout = () => (
 
     {/* Main content scrolls independently */}
     <div className="flex-1 overflow-auto p-4 text-center pt-16">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto mb-15">
         <Outlet />
       </div>
     </div>

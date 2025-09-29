@@ -62,7 +62,7 @@ export const ProjectCard = ({ projectName, date, image, role, description, link,
                     ))}
                 </div>
             )}
-            <div className="justify-end flex">
+            <div className="justify-end flex mt-4">
                 {link && (
                     <Link
                         to={link}
