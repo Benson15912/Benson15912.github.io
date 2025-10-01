@@ -1,6 +1,6 @@
 export const Projects = [
     {
-        projectName: "Recycling is Fun!",
+        projectName: "Recycling is Fun! - (LifeHack 2022 Winner)",
         date: "01-06-2022",
         image: "/project_pictures/recycling-is-fun.jpg",
         role: "Game Developer",
@@ -18,7 +18,7 @@ export const Projects = [
         skills: ["HTML", "CSS", "Flask", "SQL", "Python"],
     },
         {
-        projectName: "BrainHack 2024",
+        projectName: "BrainHack 2024 - (Semifinalists!)",
         date: "01-06-2024",
         image: "/project_pictures/brainhack.png",
         role: "AI/ML Engineer",
@@ -36,7 +36,7 @@ export const Projects = [
         skills: ["PyTorch", "Python", "Computer Vision"],
     },
         {
-        projectName: "Sarcasm Detection in Singaporean News",
+        projectName: "Sarcasm Detection in Singaporean News - (2nd place in NUS SoC Project Showcase!)",
         date: "01-04-2025",
         image: "/project_pictures/sarcasm_detection.jpg",
         role: "AI/ML Engineer",
