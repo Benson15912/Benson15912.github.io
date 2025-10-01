@@ -9,7 +9,7 @@ export const Sidebar = () => {
 
   const navItems = [
     { to: '/', label: 'Home' },
-    { to: '/about/', label: 'About' },
+    { to: '/about', label: 'About' },
     { to: '/work', label: 'Work Experience' }, // ✅ remove trailing slash
     { to: '/projects', label: 'Projects' },
     { to: '/blogs', label: 'Blogs' },
