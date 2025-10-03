@@ -13,7 +13,7 @@ This was one of the more interesting topics I got to explore and experiment with
 Here’s a video I found pretty hilarious when testing out my facial recognition function:  
 
 <div style="text-align: center;">
-  <video controls style="max-height:600px; display:inline-block;">
+  <video autoplay loop muted playsinline controls style="max-height:600px; display:inline-block;">
     <source src="/work_media/htx/face_recog.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
