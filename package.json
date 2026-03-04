@@ -6,8 +6,7 @@
   "homepage": "https://benson15912.github.io/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
+    "build": "vite build && cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
