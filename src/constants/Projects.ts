@@ -8,7 +8,7 @@ export const Projects = [
         link: "/projects/recycling-is-fun",
         skills: ["Python", "Pygame"],
     },
-        {
+    {
         projectName: "bingeworthy",
         date: "01-08-2023",
         image: "/project_pictures/bingeworthy.JPG",
@@ -17,7 +17,7 @@ export const Projects = [
         link: "/projects/bingeworthy",
         skills: ["HTML", "CSS", "Flask", "SQL", "Python"],
     },
-        {
+    {
         projectName: "BrainHack 2024 - (Semifinalists!)",
         date: "01-06-2024",
         image: "/project_pictures/brainhack.png",
@@ -26,7 +26,7 @@ export const Projects = [
         link: "/projects/brainhack-2024",
         skills: ["HuggingFace", "PyTorch", "Python", "Docker"],
     },
-        {
+    {
         projectName: "Captcha Recognition",
         date: "01-10-2024",
         image: "/project_pictures/captcha-recognition.png",
@@ -35,7 +35,7 @@ export const Projects = [
         link: "/projects/captcha-recognition",
         skills: ["PyTorch", "Python", "Computer Vision"],
     },
-        {
+    {
         projectName: "Sarcasm Detection in Singaporean News - (2nd place in NUS SoC Project Showcase!)",
         date: "01-04-2025",
         image: "/project_pictures/sarcasm_detection.jpg",
@@ -44,7 +44,7 @@ export const Projects = [
         link: "/projects/sarcasm-detection",
         skills: ["PyTorch", "Python", "NLP", "HuggingFace"],
     },
-        {
+    {
         projectName: "Discord Clone",
         date: "01-09-2024",
         image: "/project_pictures/discord.png",
@@ -61,5 +61,14 @@ export const Projects = [
         description: "A personal portfolio website showcasing my projects and skills.",
         link: "/projects/portfolio",
         skills: ["React", "Github Pages", "Tailwind"],
+    },
+    {
+        projectName: "LCA-I (UNGPTable Challenge 2025 1st Runner Up)",
+        date: "30-10-2025",
+        image: "/project_pictures/ungptable/ungptable-challenge.jpg",
+        role: "Web Developer",
+        description: "An AI-powered LCA workflow that helps companies generate environmental impact reports in hours instead of months.",
+        link: "/projects/ungptable-2025",
+        skills: ["Agentic AI", "Presentation Skills", "Python", "Web Development"],
     }
 ]
