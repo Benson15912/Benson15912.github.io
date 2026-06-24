@@ -12,5 +12,6 @@ export const skillIcons: Record<string, string> = {
   "HTML": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
   "CSS": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
   "HuggingFace": "https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.svg",
-  "Selenium": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Selenium_Logo.png/1148px-Selenium_Logo.png",
+  "Selenium": "https://raw.githubusercontent.com/devicons/devicon/master/icons/selenium/selenium-original.svg",
+  "AWS": "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
 };

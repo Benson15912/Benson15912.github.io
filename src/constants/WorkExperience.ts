@@ -1,5 +1,14 @@
 export const workDetails = [
   {
+    company: "MSD, Scaled Engineering Team (Singapore)",
+    role: "Cloud Automation Engineer Intern",
+    logo: "/logo/msd.png",
+    duration: "Jan 2026 - Jun 2026",
+    summary: "Engineered a Data Migration Pipeline for legacy applications and explored Agent Skills to automate tedious work!",
+    link: "/work/msd",
+    skills: ["Cloud", "AWS", "Skills"],
+  },
+  {
     company: "Integro Technologies, Product Team (Singapore)",
     role: "Software Engineer Intern",
     logo: "/logo/integro.png",
