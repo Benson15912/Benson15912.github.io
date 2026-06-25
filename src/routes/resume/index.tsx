@@ -22,8 +22,8 @@ function RouteComponent() {
           <div className="space-y-4">
             <div>
               <h3 className="text-xl font-medium text-gray-900 ">National University of Singapore</h3>
-              <p className="text-gray-600  mb-2">Bachelor of Computing in Computer Science | Aug 2022 - May 2026 (Expected)</p>
-              <p className="text-gray-700  font-medium mb-3">GPA: 4.71/5.00 (First Class Honours)</p>
+              <p className="text-gray-600  mb-2">Bachelor of Computing in Computer Science | Aug 2022 - May 2026 </p>
+              <p className="text-gray-700  font-medium mb-3">GPA: 4.74/5.00 (Honours with Highest Distinction)</p>
               <ul className="list-disc ml-5 space-y-1 text-gray-700 ">
                 <li>Dean's List: AY2024/2025 Semester 2</li>
                 <li>Certificate of Distinction in Artificial Intelligence Focus Area</li>

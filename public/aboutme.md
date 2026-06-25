@@ -1,6 +1,6 @@
 # 👋 Introduction
 
-Hi! I’m **Benson**, a final-year Computer Science student at **NUS**.  
+Hi! I’m **Benson**, a computer science graduate from **NUS**.  
 I built this little corner of the web to document my tech journey, share what I’m learning, and connect with people who share similar passions.
 
 [Checkout how I built this site ~~and the struggles I faced...~~](/projects/portfolio)  
