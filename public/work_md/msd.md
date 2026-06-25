@@ -15,7 +15,7 @@ Think of it this way:
 
 >Instead of buying land, laying the bricks, installing the plumbing, and setting up the security cameras yourself, you simply rent a space in a shopping mall. The mall management handles the structure, the electricity, the central air conditioning, and the security guards. You just pay a monthly fee for the space you use and focus entirely on selling your products.
 >
->If your business grows and you need more space, you do not build an extension; you just rent a larger unit next door. The cloud does the exact same thing for software, providing the digital> real estate, power, and security so you can run your applications without building the digital> infrastructure from scratch.>
+>If your business grows and you need more space, you do not build an extension; you just rent a larger unit next door. The cloud does the exact same thing for software, providing the digital real estate, power, and security so you can run your applications without building the digital infrastructure from scratch.
 
 
 Amazon Web Services, Google Cloud Platform, Microsoft Azure are one of the most used Cloud Services and MSD uses mainly AWS to power their applications and services. There are many services provided by AWS, and I mainly learned how to use EC2, RDS, S3 and Lambdas etc.
